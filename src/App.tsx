@@ -26,7 +26,7 @@ function App() {
 
             <div className="section_container-content__text-eyebrow">
               <p className="title">Psicóloga</p>
-              <p className="text-lg">CRP 06/123456</p>
+              <p className="text-lg">CRP 16/12305</p>
             </div>
 
             <h2>Maysa Ribeiro</h2>
