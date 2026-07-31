@@ -6,17 +6,25 @@ function App() {
     <main>
       <nav className="nav_container">
         <img src={logo} alt="logo" />
-        <button
-          type="button"
-          className="primary"
-          aria-label="Agendar via WhatsApp"
-          onClick={() => {
-            const win = window.open('https://wa.me/5528999442025', '_blank');
-            if (win) win.opener = null;
-          }}
-        >
-          Agende sua consulta
-        </button>
+            <button
+              type="button"
+              className="primary"
+              aria-label="Agendar via WhatsApp"
+              onClick={() => {
+                const mensagem = encodeURIComponent(
+                  'Olá! Vi seu perfil e gostaria de agendar uma consulta. Poderia me informar os horários disponíveis?'
+                );
+                const win = window.open(
+                  `https://wa.me/5528999442025?text=${mensagem}`,
+                  '_blank',
+                  'noopener,noreferrer'
+
+                );
+                if (win) win.opener = null;
+              }}
+            >
+              Agende sua consulta
+            </button>
 
       </nav>
       <section className="section_container">
@@ -57,7 +65,15 @@ function App() {
               className="primary"
               aria-label="Agendar via WhatsApp"
               onClick={() => {
-                const win = window.open('https://wa.me/5528999442025', '_blank');
+                const mensagem = encodeURIComponent(
+                  'Olá! Vi seu perfil e gostaria de agendar uma consulta. Poderia me informar os horários disponíveis?'
+                );
+                const win = window.open(
+                  `https://wa.me/5528999442025?text=${mensagem}`,
+                  '_blank',
+                  'noopener,noreferrer'
+
+                );
                 if (win) win.opener = null;
               }}
             >
